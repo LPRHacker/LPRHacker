@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Events</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FCE4EC; /* Soft Pink Background */
+            color: #424242; /* Dark Gray Text */
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img { /* Logo Style */
+            max-width: 150px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            color: #424242;
+            margin-top: 0;
+        }
+
+        header p {
+            color: #757575;
+        }
+
+        button {
+            background-color: #26A69A; /* Teal Button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        section {
+            background-color: #F5F5F5; /* Light Gray Section Background */
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        section h2 {
+            color: #424242;
+            margin-top: 0;
+        }
+
+        section ul {
+            padding-left: 20px;
+        }
+
+        #examples {
+            text-align: center;
+        }
+
+        #examples img {
+            max-width: 100%; /* Make GIFs responsive */
+            height: auto;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        #waitlist form {
+            display: flex;
+            gap: 10px;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        #waitlist input[type="email"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #E0F2F1; /* A lighter shade of Teal for the footer */
+            color: #757575;
+            font-size: 0.9em;
+        }
+
+        /* RTL Styles */
+        .rtl {
+            direction: rtl;
+            text-align: right;
+        }
+        .rtl header {
+            text-align: center; /* Keep logo centered */
+        }
+        .rtl section ul {
+            padding-right: 20px;
+            padding-left: 0;
+        }
+        .rtl #waitlist form {
+            flex-direction: row-reverse;
+        }
+        .rtl #waitlist input[type="email"] {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="./images/logo.png" alt="Sticky Events Logo">
+        <h1>Sticky Events</h1>
+        <p>Relive the Magic: Animated Stickers from Your Unforgettable Moments!</p>
+    </header>
+
+    <section id="motion-memory">
+        <h2>Capture the Memory with Motion</h2>
+        <p>Tired of static photos that don't truly capture the energy of your events? Sticky Events transforms your event videos into fun, animated WhatsApp stickers that bring those precious moments back to life.</p>
+        <ul>
+            <li><strong>Captures the Essence:</strong> Stickers aren't just static images; they bring movement and life to memories.</li>
+            <li><strong>Share the Energy:</strong> Allow users to share the excitement and emotions of the event in a fun, interactive way.</li>
+            <li><strong>Unique Souvenir/Offering:</strong> Provides a novel and memorable way to remember events or a unique add-on service for clients.</li>
+        </ul>
+    </section>
+
+    <section id="examples">
+        <h2>See it in Action!</h2>
+        <p>Here are a few examples of our animated stickers:</p>
+        <img src="./images/ReinShrink/C0305.gif" alt="Animated Sticker Example 1">
+        <img src="./images/ReinShrink/C0302.gif" alt="Animated Sticker Example 2">
+        <img src="./images/ReinShrink/C0306.gif" alt="Animated Sticker Example 3">
+		<img src="./images/ReinShrink/C0337.gif" alt="Animated Sticker Example 4">
+        </section>
+
+    <section id="for-disney">
+        <h2>For Disney Parks</h2>
+        <p>Imagine your park guests being able to capture the thrill of their favorite rides, the magic of character interactions, and the wonder of parades as animated WhatsApp stickers! Sticky Events offers a unique way to enhance the guest experience and provide a memorable digital souvenir.</p>
+        </section>
+
+    <section id="waitlist">
+        <h2>Stay in the Loop!</h2>
+        <p>Be the first to know when Sticky Events launches. Sign up for our updates!</p>
+        <form action="mailto:your-email@example.com?subject=Sticky Events Waitlist Sign-Up" method="post" enctype="text/plain">
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <footer class="ltr">
+        <p>&copy; 2025 Sticky Events</p>
+        </footer>
+
+    <div id="hebrew-content" style="display: none;" class="rtl">
+        <header>
+            <img src="your-logo.png" alt="סטיקי מומנטום לוגו">
+            <h1>סטיקי מומנטום</h1>
+            <p>לחיות מחדש את הקסם: מדבקות אנימציה מהרגעים הבלתי נשכחים שלכם!</p>
+        </header>
+
+        <section id="motion-memory-he">
+            <h2>לתפוס את הזיכרון בתנועה</h2>
+            <p>נמאס לכם מתמונות סטטיות שלא באמת לוכדות את האנרגיה של האירועים שלכם? סטיקי מומנטום הופך את סרטוני האירועים שלכם למדבקות וואטסאפ אנימציה מהנות שמחזירות לחיים את הרגעים היקרים האלה.</p>
+            <ul>
+                <li><strong>לוכד את המהות:</strong> מדבקות הן לא רק תמונות סטטיות; הן מביאות תנועה וחיים לזיכרונות.</li>
+                <li><strong>שתפו את האנרגיה:</strong> אפשרו למשתמשים לשתף את ההתרגשות והרגשות של האירוע בצורה מהנה ואינטראקטיבית.</li>
+                <li><strong>מזכרת/הצעה ייחודית:</strong> מספק דרך חדשנית ובלתי נשכחת לזכור אירועים או שירות נוסף ייחודי ללקוחות.</li>
+            </ul>
+        </section>
+
+        <section id="examples-he">
+            <h2>ראו זאת בפעולה!</h2>
+            <p>הנה כמה דוגמאות של המדבקות האנימציה שלנו:</p>
+            <img src="./images/ReinShrink/C0305.gif" alt="דוגמה למדבקת אנימציה 1">
+            <img src="./images/ReinShrink/C0302.gif" alt="דוגמה למדבקת אנימציה 2">
+            <img src="./images/ReinShrink/C0306.gif" alt="דוגמה למדבקת אנימציה 3">
+			<img src="./images/ReinShrink/C0337.gif" alt="דוגמה למדבקת אנימציה 4">
+            </section>
+
+        <section id="for-photographers-he">
+            <h2>לצלמי וידאו לחתונות</h2>
+            <p>העניקו ללקוחות שלכם ערך מוסף ייחודי ומרגש! סטיקי מומנטום מאפשר להם להפוך רגעים בלתי נשכחים מסרט החתונה שלהם למדבקות וואטסאפ אנימציה, שיוכלו לשתף עם חברים ומשפחה.</p>
+            </section>
+
+        <section id="waitlist-he">
+            <h2>הישארו בעניינים!</h2>
+            <p>היו הראשונים לדעת מתי סטיקי מומנטום יוצא לאור. הירשמו לעדכונים שלנו!</p>
+            <form action="mailto:your-email@example.com?subject=הרשמה לרשימת המתנה של סטיקי מומנטום" method="post" enctype="text/plain">
+                <input type="email" name="email" placeholder="כתובת האימייל שלך" required>
+                <button type="submit">הרשמה</button>
+            </form>
+        </section>
+
+        <footer class="rtl">
+            <p>&copy; 2025 סטיקי מומנטום</p>
+            </footer>
+    </div>
+
+    <script>
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const userIP = data.ip;
+                fetch(`https://ipapi.co/${userIP}/json/`)
+                    .then(response => response.json())
+                    .then(locationData => {
+                        const countryCode = locationData.country_code;
+                        const englishContent = document.getElementById('english-content');
+                        const hebrewContent = document.getElementById('hebrew-content');
+                        const htmlElement = document.documentElement;
+
+                        if (countryCode === 'IL') {
+                            englishContent.style.display = 'none';
+                            hebrewContent.style.display = 'block';
+                            htmlElement.lang = 'he';
+                            htmlElement.classList.add('rtl');
+                            htmlElement.classList.remove('ltr');
+                        } else {
+                            englishContent.style.display = 'block';
+                            hebrewContent.style.display = 'none';
+                            htmlElement.lang = 'en';
+                            htmlElement.classList.add('ltr');
+                            htmlElement.classList.remove('rtl');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching location data:', error);
+                        // Default to English if location can't be determined
+                        document.getElementById('english-content').style.display = 'block';
+                        document.documentElement.lang = 'en';
+                        document.documentElement.classList.add('ltr');
+                        document.documentElement.classList.remove('rtl');
+                    });
+            })
+            .catch(error => {
+                console.error('Error fetching IP address:', error);
+                // Default to English if IP can't be fetched
+                document.getElementById('english-content').style.display = 'block';
+                document.documentElement.lang = 'en';
+                document.documentElement.classList.add('ltr');
+                document.documentElement.classList.remove('rtl');
+            });
+    </script>
+
+</body>
+</html>
